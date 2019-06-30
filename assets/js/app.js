@@ -13,7 +13,15 @@ import('../css/app.css');
 
 import getNiceMessage from './get_nice_message';
 import $ from 'jquery';
+import 'bootstrap';
 // uncomment if you have legacy code that needs global variables
 //global.$ = $;
 
 console.log(getNiceMessage(5));
+$('.dropdown-toggle').dropdown();
+$('.custom-file-input').on('change', function(event) {
+    var inputFile = event.currentTarget;
+    $(inputFile).parent()
+        .find('.custom-file-label')
+        .html(inputFile.files[0].name);
+});
