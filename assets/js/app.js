@@ -11,6 +11,9 @@ import('../css/app.css');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
 
-const getNiceMessage = require('./get_nice_message');
+import getNiceMessage from './get_nice_message';
+import $ from 'jquery';
+// uncomment if you have legacy code that needs global variables
+//global.$ = $;
 
 console.log(getNiceMessage(5));
