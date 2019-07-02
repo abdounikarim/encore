@@ -11,7 +11,7 @@ import('../css/app.scss');
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
 
-import getNiceMessage from './get_nice_message';
+import getNiceMessage from './components/get_nice_message';
 import $ from 'jquery';
 import 'bootstrap';
 // uncomment if you have legacy code that needs global variables
